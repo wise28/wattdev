@@ -148,12 +148,6 @@ a {
   }
 }
 
-////style for Iphone5/6/7/8 started
-//.slide-top_ip5 {
-//  top: 265px;
-//}
-////style for Iphone5/6/7/8 end
-
 .slider {
   width: 720px;
   margin: 0 auto;
@@ -166,12 +160,20 @@ a {
     width: auto;
     left: 0;
     top: 189px;
-      //@media screen and (height: 568px) and (height: 667px) {
-      //  top: 265px;
-      //}
+      @media (orientation: landscape) {
+        top:50px;
+      }
     }
-  @media screen and (min-width: 768px) and (max-width: 1024px){
-    top: 528px;
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    top: 0;
+    left: 3%;
+  }
+  @media (width: 768px) {
+    top: 346px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1023px){
+    top: 150px;
+    left: 30%;
   }
 
   &__title {
@@ -180,14 +182,22 @@ a {
     color: #FFFFFF;
     @media (width: 768px) {
       position: absolute;
-      top: 65px;
-      font-size: 72px;
+      top: 200px;
+      font-size: 122px;
     }
     @media screen and (max-width: 480px){
       position: absolute;
       top: 34px;
       font-size: 48px;
       left: 12px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      font-size: 40px;
+      position: absolute;
+      top: 60px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+      font-size: 52px;
     }
   }
   &__title_color {
@@ -203,9 +213,16 @@ a {
       font-size: 48px;
       left: 12px;
     }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      font-size: 40px;
+      top: 102px;
+    }
     @media (width: 768px) {
-      font-size: 72px;
-      top: 124px;
+        top: 300px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+      font-size: 52px;
+      top: 50px;
     }
   }
   &__text {
@@ -224,9 +241,19 @@ a {
       bottom: -227px;
       line-height: 17px;
       left: 12px;
+      @media (orientation: landscape) {
+        bottom: -206px;
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      bottom: -264px;
+      left: 0;
     }
     @media (width: 768px) {
-      bottom: -300px;
+      bottom: -550px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+      bottom: -147px;
     }
   }
 }
@@ -289,6 +316,9 @@ a {
       li{
         line-height:60px;
         border-bottom:1px solid rgba(255, 255, 255, 0.1);
+        @media (orientation: landscape) {
+          line-height:30px;
+        }
       }
       li:last-child{
         border-bottom:none;
@@ -300,6 +330,7 @@ a {
         display: flex;
       }
     }
+
   }
 
 }
