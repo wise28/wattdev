@@ -31,14 +31,6 @@ body {
   background: grey;
   height: 100vh;
 }
-//@include only-for-desktop(768px) {
-//  .section {
-//    display: none;
-//  }
-//  .active {
-//    display: block;
-//  }
-//}
 
 .wrapper {
   height: 100vh;
@@ -46,8 +38,6 @@ body {
 }
 
 .onepage-wrapper section .page_container {
-  //position: relative;
-  //margin: 0 auto 0;
   z-index: 3;
 }
 .onepage-wrapper section  {
@@ -168,7 +158,6 @@ a {
       }
     }
 
-
   @media screen and (min-width: 481px) and (max-width: 767px) {
     top: 0;
     left: 3%;
@@ -212,9 +201,7 @@ a {
     color: white;
     position: absolute;
     top: 120px;
-    //@media screen and (-webkit-min-device-pixel-ratio:0) {
-    //  color: white;
-    //}
+
     @media screen and (-webkit-min-device-pixel-ratio:0)
     and (min-resolution:.001dpcm) {
       color:transparent;
