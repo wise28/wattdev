@@ -41,12 +41,10 @@ body {
   height: 100vh; }
 
 .wrapper {
-  height: 100%;
+  height: 100vh;
   overflow: hidden; }
 
 .onepage-wrapper section .page_container {
-  position: relative;
-  margin: 0 auto 0;
   z-index: 3; }
 
 .onepage-wrapper section {
@@ -163,9 +161,6 @@ a {
     background-color: #F8A815;
     display: block; }
 
-.slide-top_ip5 {
-  top: 265px; }
-
 .slider {
   width: 720px;
   margin: 0 auto;
@@ -179,9 +174,6 @@ a {
       width: auto;
       left: 0;
       top: 189px; } }
-  @media screen and (max-width: 480px) and (height: 568px) and (height: 667px) {
-    .slider {
-      top: 265px; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .slider {
       top: 528px; } }
