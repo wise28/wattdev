@@ -105,6 +105,10 @@ a {
           justify-content: space-between; }
   .header__logo {
     z-index: 4; }
+    @media screen and (max-width: 768px) {
+      .header__logo svg {
+        width: 70px;
+        height: 46px; } }
   .header__menu {
     padding-top: 28px;
     width: 750px;
@@ -150,7 +154,7 @@ a {
 @media (min-width: 320px) and (max-width: 768px) {
   .header__button {
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     width: 90%;
     text-align: center;
     left: 5%; } }
@@ -158,6 +162,9 @@ a {
     padding: 15px 31px;
     background-color: #F8A815;
     display: block; }
+
+.slide-top_ip5 {
+  top: 265px; }
 
 .slider {
   width: 720px;
@@ -170,8 +177,12 @@ a {
   @media screen and (max-width: 480px) {
     .slider {
       width: auto;
-      left: 0; } }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+      left: 0;
+      top: 189px; } }
+  @media screen and (max-width: 480px) and (height: 568px) and (height: 667px) {
+    .slider {
+      top: 265px; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     .slider {
       top: 528px; } }
   .slider__title {
@@ -186,7 +197,7 @@ a {
     @media screen and (max-width: 480px) {
       .slider__title {
         position: absolute;
-        top: 74px;
+        top: 34px;
         font-size: 48px;
         left: 12px; } }
   .slider__title_color {
@@ -198,7 +209,7 @@ a {
     top: 120px; }
     @media screen and (max-width: 480px) {
       .slider__title_color {
-        top: 124px;
+        top: 75px;
         width: 100vw;
         font-size: 48px;
         left: 12px; } }
@@ -220,7 +231,7 @@ a {
       .slider__text {
         width: 95vw;
         font-size: 12px;
-        bottom: -288px;
+        bottom: -227px;
         line-height: 17px;
         left: 12px; } }
     @media (width: 768px) {
@@ -235,7 +246,7 @@ a {
   .header .button {
     display: block;
     position: absolute;
-    top: -83px;
+    top: -54px;
     right: 44px; }
   .header .menu {
     position: absolute;
