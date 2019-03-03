@@ -1,0 +1,340 @@
+@import "settings";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+
+  height: 100%;
+  font: {
+    family: $MuseoSansCyrl;
+    size: $font-size;
+  }
+  position: relative;
+
+}
+
+//styles scroll page started
+.page1 {
+  background: url("../img/bg.png") left top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  @media (width: 320px) {
+    background: url("../img/bg-mob.png") center top no-repeat;
+    background-size: cover;
+  }
+}
+.page2 {
+  background: grey;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.onepage-wrapper section .page_container {
+  z-index: 3;
+}
+.onepage-wrapper section  {
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1138px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+//styles scroll page end
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.header {
+  display: flex;
+  max-width: 1138px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  justify-content: space-between;
+  &__logo {
+    z-index: 4;
+    @media screen and (max-width: 768px) {
+      svg {
+        width: 70px;
+        height: 46px;
+      }
+    }
+  }
+  &__menu {
+    padding-top: 28px;
+    width: 750px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  &__menu-list {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: normal;
+    @media (min-width: 320px) {
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  &__menu-item {
+    width: 96px;
+    margin-left: 17px;
+    margin-right: 17px;
+    @media (min-width: 320px) {
+      @media (max-width: 768px) {
+        width: auto;
+      }
+    }
+  }
+  &__button {
+    padding-top: 28px;
+    text-transform: uppercase;
+    z-index: 2;
+    @media (min-width: 320px) {
+      @media (max-width: 768px) {
+        position: absolute;
+        bottom: 3%;
+        width: 90%;
+        text-align: center;
+        left: 5%;
+      }
+    }
+  }
+  &__button_link {
+    padding: 15px 31px;
+    background-color: $orange;
+    display: block;
+  }
+}
+
+.slider {
+  width: 720px;
+  margin: 0 auto;
+  font-family: $MuseoSansCyrl900;
+  position: absolute;
+  right: 0;
+  top: 209px;
+  z-index: 1;
+  @media screen and (max-width: 480px) {
+    width: auto;
+    left: 0;
+    top: 189px;
+      @media (orientation: landscape) {
+        top:50px;
+      }
+      @media screen and (height: 568px) {
+        top: 269px;
+      }
+    }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    top: 0;
+    left: 3%;
+  }
+  @media (width: 768px) {
+    top: 346px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1023px){
+    top: 150px;
+    left: 30%;
+  }
+
+  &__title {
+    font-size: 122px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @media (width: 768px) {
+      position: absolute;
+      top: 200px;
+      font-size: 122px;
+    }
+    @media screen and (max-width: 480px){
+      position: absolute;
+      top: 34px;
+      font-size: 48px;
+      left: 12px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      font-size: 40px;
+      position: absolute;
+      top: 60px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+      font-size: 52px;
+    }
+  }
+  &__title_color {
+    font-size: 122px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    color: white;
+    position: absolute;
+    top: 120px;
+
+    @media screen and (-webkit-min-device-pixel-ratio:0)
+    and (min-resolution:.001dpcm) {
+      color:transparent;
+    }
+    @media screen and (max-width: 480px){
+      top: 75px;
+      width: 100vw;
+      font-size: 48px;
+      left: 12px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      font-size: 40px;
+      top: 102px;
+    }
+    @media (width: 768px) {
+        top: 300px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+      font-size: 52px;
+      top: 50px;
+    }
+  }
+  &__text {
+    line-height: 25px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: white;
+    max-width: 508px;
+    position: absolute;
+    bottom: -230px;
+    left: 8px;
+    font-family: $MuseoSansCyrl;
+    @media screen and (max-width: 480px){
+      width: 95vw;
+      font-size: 12px;
+      bottom: -227px;
+      line-height: 17px;
+      left: 12px;
+      @media (orientation: landscape) {
+        bottom: -206px;
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      bottom: -264px;
+      left: 0;
+    }
+    @media (width: 768px) {
+      bottom: -550px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+      bottom: -147px;
+    }
+  }
+}
+
+//hamburger menu styles started
+.header {
+  @include only-for-mobile-menu (768px) {
+    %line{
+      background: white;
+      width:24px;
+      height:1px;
+    }
+
+    .button{
+      display:block;
+      position: absolute;
+      top: -54px;
+      right: 44px;
+      height:24px;
+      width:24px;
+    }
+
+    .menu{
+      @extend %line;
+      position: absolute;
+      top: 24px;
+      &:before{
+        @extend %line;
+        content: '';
+        position: absolute;
+        top: -8px;
+      }
+      &:after{
+        @extend %line;
+        content: '';
+        position: absolute;
+        top: 8px;
+        left:0;
+      }
+      b{
+        top:-13px;
+        left:2px;
+        font-size:.55em;
+        line-height:1em;
+        position:relative;
+      }
+    }
+
+    ///Lets make a sub-menu
+    .sub-menu{
+      font-weight:300;
+      font-size:1.5em;
+      list-style-type:none;
+      padding:10px 20px;
+      background: #080F1B;;
+      margin:0;
+      position:fixed;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      display: none;
+      li{
+        line-height:60px;
+        border-bottom:1px solid rgba(255, 255, 255, 0.1);
+        @media (orientation: landscape) {
+          line-height:30px;
+        }
+      }
+      li:last-child{
+        border-bottom:none;
+      }
+    }
+
+    .menu-active{
+      .sub-menu{
+        display: flex;
+      }
+    }
+
+  }
+
+}
+
+//hamburger menu styles end
+
