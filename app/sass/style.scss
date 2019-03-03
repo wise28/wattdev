@@ -77,6 +77,12 @@ a {
   justify-content: space-between;
   &__logo {
     z-index: 4;
+    @media screen and (max-width: 768px) {
+      svg {
+        width: 70px;
+        height: 46px;
+      }
+    }
   }
   &__menu {
     padding-top: 28px;
@@ -114,7 +120,7 @@ a {
     @media (min-width: 320px) {
       @media (max-width: 768px) {
         position: absolute;
-        bottom: 5%;
+        bottom: 3%;
         width: 90%;
         text-align: center;
         left: 5%;
@@ -127,6 +133,13 @@ a {
     display: block;
   }
 }
+
+////style for Iphone5/6/7/8 started
+//.slide-top_ip5 {
+//  top: 265px;
+//}
+////style for Iphone5/6/7/8 end
+
 .slider {
   width: 720px;
   margin: 0 auto;
@@ -138,8 +151,12 @@ a {
   @media screen and (max-width: 480px) {
     width: auto;
     left: 0;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    top: 189px;
+      //@media screen and (height: 568px) and (height: 667px) {
+      //  top: 265px;
+      //}
+    }
+  @media screen and (min-width: 768px) and (max-width: 1024px){
     top: 528px;
   }
 
@@ -154,7 +171,7 @@ a {
     }
     @media screen and (max-width: 480px){
       position: absolute;
-      top: 74px;
+      top: 34px;
       font-size: 48px;
       left: 12px;
     }
@@ -167,7 +184,7 @@ a {
     position: absolute;
     top: 120px;
     @media screen and (max-width: 480px){
-      top: 124px;
+      top: 75px;
       width: 100vw;
       font-size: 48px;
       left: 12px;
@@ -190,7 +207,7 @@ a {
     @media screen and (max-width: 480px){
       width: 95vw;
       font-size: 12px;
-      bottom: -288px;
+      bottom: -227px;
       line-height: 17px;
       left: 12px;
     }
@@ -212,7 +229,7 @@ a {
     .button{
       display:block;
       position: absolute;
-      top: -83px;
+      top: -54px;
       right: 44px;
     }
 
