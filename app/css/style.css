@@ -40,11 +40,17 @@ body {
   background: grey;
   height: 100vh; }
 
-@media (min-width: 768px) {
-  .section {
-    display: none; }
-  .active {
-    display: block; } }
+.wrapper {
+  height: 100%;
+  overflow: hidden; }
+
+.onepage-wrapper section .page_container {
+  position: relative;
+  margin: 0 auto 0;
+  z-index: 3; }
+
+.onepage-wrapper section {
+  overflow: hidden; }
 
 .content {
   max-width: 1138px;
@@ -167,7 +173,7 @@ a {
       left: 0; } }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     .slider {
-      top: 555px; } }
+      top: 528px; } }
   .slider__title {
     font-size: 122px;
     text-transform: uppercase;

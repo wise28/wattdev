@@ -31,13 +31,27 @@ body {
   background: grey;
   height: 100vh;
 }
-@include only-for-desktop(768px) {
-  .section {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
+//@include only-for-desktop(768px) {
+//  .section {
+//    display: none;
+//  }
+//  .active {
+//    display: block;
+//  }
+//}
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.onepage-wrapper section .page_container {
+  position: relative;
+  margin: 0 auto 0;
+  z-index: 3;
+}
+.onepage-wrapper section  {
+  overflow: hidden;
 }
 
 .content {
