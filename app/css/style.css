@@ -177,6 +177,9 @@ a {
   @media screen and (max-width: 480px) and (orientation: landscape) {
     .slider {
       top: 50px; } }
+  @media screen and (max-width: 480px) and (height: 568px) {
+    .slider {
+      top: 269px; } }
   @media screen and (min-width: 481px) and (max-width: 767px) {
     .slider {
       top: 0;
@@ -215,9 +218,12 @@ a {
     font-size: 122px;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
-    color: transparent;
+    color: white;
     position: absolute;
     top: 120px; }
+    @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+      .slider__title_color {
+        color: transparent; } }
     @media screen and (max-width: 480px) {
       .slider__title_color {
         top: 75px;
@@ -275,7 +281,9 @@ a {
     display: block;
     position: absolute;
     top: -54px;
-    right: 44px; }
+    right: 44px;
+    height: 24px;
+    width: 24px; }
   .header .menu {
     position: absolute;
     top: 24px; }
